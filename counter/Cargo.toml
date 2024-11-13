@@ -1,0 +1,11 @@
+[package]
+name = "counter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+redis = "0.27.5"
+rocket = "0.5.1"
+rocket_db_pools = { version = "0.2.0", features = ["deadpool_redis"] }
